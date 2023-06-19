@@ -109,15 +109,13 @@ func TestTDPBSSD(t *testing.T) {
 	tc.palette = 1
 	tc.startRow = 0
 
-	tc.colsb[0] = MAXROWS
-	tc.colsb[1] = MAXROWS
-	tc.colsb[2] = MAXROWS
-	tc.colsb[3] = MAXROWS
+	tc.colsb[0] = 64
+	tc.colsb[1] = 64
+	tc.colsb[2] = 64
 
-	tc.rows[0] = MAXROWS
-	tc.rows[1] = MAXCOLS
-	tc.rows[2] = MAXCOLS
-	tc.rows[3] = MAXCOLS
+	tc.rows[0] = 16
+	tc.rows[1] = 16
+	tc.rows[2] = 16
 
 	initBuffer8(src1, 2)
 	initBuffer8(src2, 2)
